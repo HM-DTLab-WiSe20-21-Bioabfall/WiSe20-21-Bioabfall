@@ -1,0 +1,64 @@
+<div class="zentrierung">
+    <h2 id="stellplatznr">Stellplatz: {{gebiete.strasse}}</h2>
+    <div class="dropzone">
+        <script src="../../../../node_modules/dropzone/dist/dropzone.js"></script>
+        <script src="/js/dropzone.js?v=6"></script>
+      
+  <script>
+    Dropzone.autoDiscover = false;
+  </script>
+
+
+        <form action="/file-upload"
+        class="dropzone"
+        id="my-awesome-dropzone"></form>
+        <input type="file" accept="image/*" capture="camera" id="testhidden" hidden/>
+        <label for="testhidden"><mat-icon class="icon-foto">add_a_photo</mat-icon></label>
+
+    
+    </div>
+    <div class="bewertung">
+        <div class="beschriftung">Bewertung der Tonne:</div>
+        
+        <mat-button-toggle-group class="bewertung-buttons">
+            <mat-button-toggle class="gruen"><mat-icon id="buttongreen">radio_button_checked</mat-icon></mat-button-toggle>
+            <mat-button-toggle class="gelb" ><mat-icon id="buttonyellow">radio_button_checked</mat-icon></mat-button-toggle>
+            <mat-button-toggle class="rot" ><mat-icon id="buttonred">radio_button_checked</mat-icon></mat-button-toggle>
+        </mat-button-toggle-group>
+        <div class="beanstandung">
+            
+            <form class="beanstandung-feld">
+                <mat-form-field class="example-full-width">
+                <mat-label>Beanstandung angeben</mat-label>
+                <textarea matInput placeholder="Text eingeben"></textarea>
+                </mat-form-field>
+            </form>
+        </div>
+    </div>
+    <p></p>
+    <div class="defekt">
+        <span class="beschriftung">Tonne defekt:</span>
+        <mat-checkbox class="checkbox">ja</mat-checkbox>
+        <mat-checkbox class="checkbox">nein</mat-checkbox>
+    </div>
+    <p></p>
+    <div class="anmerkungen">
+        <form class="anmerkungen-feld">
+            <mat-form-field class="example-full-width">
+            <mat-label>Defekt angeben</mat-label>
+            <textarea matInput placeholder="Text eingeben"></textarea>
+            </mat-form-field>
+        </form>
+    </div>
+    
+    <body>
+        <p matLine>{{gebiete.tonnen[0].volumen}} L</p>
+        <p matLine>Letzte Bewertung: 30.03.2019</p>
+        <p matLine>Hinweis: Tonnen hinter Hecke</p>
+    </body>
+    <button class="button-speichern" mat-stroked-button routerLink="/app-layout/k-aktuelle-partie">
+        <mat-icon class="icon-save">save</mat-icon>
+        <span>Bewertung speichern</span>
+    </button>
+
+

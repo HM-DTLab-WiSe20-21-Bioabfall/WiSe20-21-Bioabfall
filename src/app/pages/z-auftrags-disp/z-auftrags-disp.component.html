@@ -1,0 +1,257 @@
+<!--><label>
+  
+   <input
+    type='checkbox'
+    [checked]='calendarOptions.weekends'
+    (change)='handleWeekendsToggle()'/> Wochenende ein-/ausblenden
+
+</label><!-->
+  <div id="fcTrash" class="material-icons md-1">delete_forever</div>
+
+  <div fxLayout="row wrap" >
+  <div fxFlex="0"  ><full-calendar
+    *ngIf='calendarVisible'
+    [options]='calendarOptions'></full-calendar>
+  </div>
+
+
+  <div fxFlex="0 1 ">
+    <table class="districts">
+      <colgroup>
+        <col span="3" >
+        <col span="1"class= "zuletzt">
+      </colgroup>
+      <tr>
+        <th>Stadtbezirk (Nr.)</th>
+        <th>Stadtbezirk (Name)</th>
+        <th>Dauer (Tage)</th>
+        <!-- <th class= "zuletzt"> zuletzt kontrolliert </th> -->
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Altstadt-Lehel</td>
+        <td>2</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Ludwigsvorstadt-Isarvorstadt</td>
+        <td>3</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Maxvorstadt</td>
+        <td>2</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Schwabing-West</td>
+        <td>5</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Au-Haidhausen</td>
+        <td>4</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Sendling</td>
+        <td>3</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Sendling-Westpark</td>
+        <td>2</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Schwanthalerhöhe</td>
+        <td>3</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Neuhausen-Nymphenburg</td>
+        <td>4</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Moosach</td>
+        <td>2</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Milbertshofen-Am Hart</td>
+        <td>3</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Schwabing-Freimann</td>
+        <td>3</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>Bogenhausen</td>
+        <td>2</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>Berg am Laim</td>
+        <td>4</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>Trudering-Riem</td>
+        <td>7</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>Ramersdorf-Perlach</td>
+        <td>5</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>Obergiesing-Fasangarten</td>
+        <td>3</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>Untergiesing-Harlaching</td>
+        <td>2</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>Thalkirchen-Obersendling-Forstenried-Fürstenried-Solln</td>
+        <td>5</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>Hadern</td>
+        <td>3</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>Pasing-Obermenzing</td>
+        <td>4</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>Aubing-Lochhausen-Langwied</td>
+        <td>4</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>Allach-Untermenzing</td>
+        <td>3</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>Feldmoching-Hasenbergl</td>
+        <td>2</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>Laim</td>
+        <td>4</td>
+        <!-- <td class= "zuletzt"><form action="/action_page.php">
+          <label for="week"></label>
+          <input type="week" id="week" name="week">
+        </form></td> -->
+      </tr>
+    </table>
+  </div>
+

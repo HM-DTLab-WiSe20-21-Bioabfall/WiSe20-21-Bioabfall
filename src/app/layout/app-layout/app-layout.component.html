@@ -1,0 +1,36 @@
+
+<mat-toolbar class="toolbar-top">
+    <div class="titlelogo">
+        <img src="assets/svg/AWM.svg" height="40" width="40" >
+    </div>
+    <span class="example-spacer"></span>
+    <span class="uberschrift">
+    Biomüll Kontrolle
+    </span>
+    <span class="example-spacer"></span>
+  <nav>  <button routerLink="" class="logoutbutton" mat-icon-button>
+        <mat-icon>exit_to_app</mat-icon>
+        <p class="t-logout">logout</p>
+    </button>
+    </nav>
+</mat-toolbar>
+<div class ="content-container">
+        <router-outlet></router-outlet>
+</div>
+
+<footer class="footer" >
+    <mat-toolbar class="toolbarNav">
+        <button routerLink= "./k-auftrag-ubersicht" class="button-auftraege" color="button" mat-button>
+            <mat-icon>library_books</mat-icon>
+            <p class="t-auftraege">Aufträge</p>
+        </button>
+        <button routerLink= "./k-aktueller-auftrag" class="button-aktuellerauftrag" color="button" mat-button>
+            <mat-icon>assignment_ind</mat-icon>
+            <p class="t-aktuellerauftrag">Aktueller Auftrag</p>
+        </button>
+        <button routerLink= "./k-wetter" class="button-wetter" color="button" mat-button>
+            <mat-icon>cloud</mat-icon>
+            <p>Wetter</p>
+        </button>
+    </mat-toolbar>
+</footer>

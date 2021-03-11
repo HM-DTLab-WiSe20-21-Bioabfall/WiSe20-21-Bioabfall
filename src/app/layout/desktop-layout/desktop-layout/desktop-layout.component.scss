@@ -1,0 +1,87 @@
+@import '~@angular/material/theming';
+@include mat-core();
+@import "src/styles.scss";
+
+.titlelogo {
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 10px;
+}
+
+.example-spacer {
+  flex: 2 1 auto;
+}
+.logoutbutton{
+  margin-bottom: 8px ;
+}
+.mat-button{
+  color: white;
+}
+p {
+  margin-top: -10px;
+}
+
+.toolbar-top{
+  position: sticky;
+  position: -webkit-sticky; /* Für macOS/iOS Safari */
+  top: 0; /* Toolbar ganz oben */
+  z-index: 1000; 
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: white;
+    border-bottom: 4px solid mat-color($bio10-primary);
+  }
+  
+.toolbarNav{
+  background-color: mat-color($bio10-primary);
+  position: fixed;
+    bottom: 0; 
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+
+
+a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+margin-left: 10%;
+padding: 10px;
+}
+
+.example-container {
+  
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.seite{width: 200px;
+}
+.t-logout{
+  font-size: 12px;
+  margin-top: -22px;
+}
+.button{
+color: black;
+margin-top: 3px;
+width: 100%;
+ }
+
+.tonnen-button {
+  margin-left: -14px;
+  margin-top: 2px;
+}
+
+.gebiet-button {
+ margin-left: -70px;
+  
+}
+
+.icon-sweep{ 
+  font-size: 1.9em;
+  transform: translate(0,-2px);
+}

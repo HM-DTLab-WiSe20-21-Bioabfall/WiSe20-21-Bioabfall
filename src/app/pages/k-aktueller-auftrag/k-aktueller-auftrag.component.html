@@ -1,0 +1,60 @@
+<div class="center">
+
+    <mat-action-list>
+        <h2>{{auftrag}}</h2>
+        <mat-list-item class="list" *ngFor='let p of partien; index as i'>
+            <button matLine routerLink= "/app-layout/k-aktuelle-partie" class="button" mat-button id={{i}} (click)='onClick(i)'>Stellplatz: {{p.strasse}}</button> 
+                    <p matLine>Anzahl Tonnen: {{p.tonnen.length}}</p>
+            <mat-checkbox class="checkbox"> </mat-checkbox>
+        </mat-list-item>
+
+    </mat-action-list>
+
+
+
+   <!--  <mat-action-list> 
+        <h2>Auftrag 2</h2>
+
+    <mat-list-item class="list">
+        <button matLine routerLink= "/app-layout/k-aktuelle-partie" class="button" mat-button> <h3>Partie 6</h3></button>
+        <p matLine>Adresse: xyz; 5 Tonnen</p>
+        <mat-checkbox class="checkbox"> </mat-checkbox>   
+     </mat-list-item> 
+
+        <mat-divider></mat-divider>
+
+        <mat-list-item class="list">
+            <button matLine routerLink= "/app-layout/k-aktuelle-partie" class="button" mat-button> <h3>Partie 7</h3></button>
+            <p matLine>Adresse: xyz; 3 Tonnen</p>
+            <mat-checkbox class="checkbox"> </mat-checkbox>   
+         </mat-list-item> 
+    
+            <mat-divider></mat-divider>
+
+            <mat-list-item class="list">
+                <button matLine routerLink= "/app-layout/k-aktuelle-partie" class="button" mat-button> <h3>Partie 8</h3></button>
+                <p matLine>Adresse: xyz; 1 Tonne</p>
+                <mat-checkbox class="checkbox"> </mat-checkbox>   
+             </mat-list-item> 
+        
+                <mat-divider></mat-divider>
+
+                <mat-list-item class="list">
+                    <button matLine routerLink= "/app-layout/k-aktuelle-partie" class="button" mat-button> <h3>Partie 9</h3></button>
+                    <p matLine>Adresse: xyz; 3 Tonnen</p>
+                    <mat-checkbox class="checkbox"> </mat-checkbox>   
+                 </mat-list-item> 
+            
+                    <mat-divider></mat-divider>
+
+                    <mat-list-item class="list">
+                        <button matLine routerLink= "/app-layout/k-aktuelle-partie" class="button" mat-button> <h3>Partie 10</h3></button>
+                        <p matLine>Adresse: xyz; 4 Tonnen</p>
+                        <mat-checkbox class="checkbox"> </mat-checkbox>   
+                     </mat-list-item> 
+                     
+                     <mat-divider></mat-divider>
+
+    </mat-action-list>
+ -->
+</div> 

@@ -1,0 +1,68 @@
+<div class="center">
+<mat-action-list>
+    <h2>Aktueller Stellplatz: {{gebiete.strasse}}</h2>
+    <mat-list-item class="list" *ngFor='let t of gebiete.tonnen'>
+        <button matLine routerLink= "/app-layout/k-tonne-bewerten" class="button" mat-button >Tonnen ID: {{t.id}}</button> 
+            <p matLine>Tonnenvolumen: {{t.volumen}}l</p>
+        <mat-checkbox class="checkbox"> </mat-checkbox>
+    </mat-list-item>
+</mat-action-list>    
+
+
+    <!--
+    <mat-action-list> 
+        <h2 matLine>Partie</h2>
+        <body>
+            <p matLine>ID: 1234 Adresse: Hochschulstraße</p>
+            <p matLine>Letzte Bewertung: 30.03.2019</p>
+            <p matLine>Hinweis: Tonnen hinter Hecke</p>
+        </body> 
+
+     <mat-divider></mat-divider>
+
+    <mat-list-item class="list">
+        <span matLine>
+            <div class="bio">Bio</div>
+            <div class="liter">120L</div>
+        </span>
+        <p matLine>ID: 2442525</p>
+        <p matLine>Kunde: Axel Schulz</p>
+        <button  routerLink= "/app-layout/k-tonne-bewerten" class="bewerten" matLine mat-button>BEWERTEN</button>
+        <mat-checkbox class="checkbox"> </mat-checkbox>   
+     </mat-list-item> 
+
+        <mat-divider></mat-divider>
+
+        <mat-list-item >
+            <span matLine>
+                <div class="bio">Bio</div>
+                <div class="liter">120L</div>
+            </span>
+            
+            <p matLine>ID: 2442525</p>
+            <p matLine>Kunde: Axel Schulz</p>
+            <button  routerLink= "/app-layout/k-tonne-bewerten" class="bewerten" mat-line mat-button>BEWERTEN</button>
+            <mat-checkbox class="checkbox"> </mat-checkbox>   
+          
+         </mat-list-item>
+
+        <mat-divider></mat-divider>
+
+        <mat-list-item >
+            <span matLine>
+                <div class="bio">Bio</div>
+                <div class="liter">120L</div>
+            </span>
+            <p matLine>ID: 2442525</p>
+            <p matLine>Kunde: Axel Schulz</p>
+            <button  routerLink= "/app-layout/k-tonne-bewerten" class="bewerten" matLine mat-button>BEWERTEN</button>
+            <mat-checkbox class="checkbox"> </mat-checkbox>   
+         </mat-list-item>
+
+        <mat-divider></mat-divider>
+        
+        <button mat-stroked-button routerLink="/app-layout/k-aktueller-auftrag"> <h3>PARTIE ABSCHLIEßEN</h3></button>
+
+    </mat-action-list>
+-->
+</div> 

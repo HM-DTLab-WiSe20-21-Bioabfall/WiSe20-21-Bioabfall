@@ -1,0 +1,116 @@
+
+.list{
+  padding-top: 18px;
+  padding-bottom: 30px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  
+  }
+  
+  .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin-top: 15px;
+    }
+   
+      .button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 16pt;
+      color: black;
+      margin-bottom: 2px;
+        }
+         .button:hover {
+          background-color:rgb(233, 230, 230);
+          color: orangered !important; 
+        }
+
+  h2{
+      color: grey;
+      font-size: 18pt;
+      margin-bottom: 4px;
+  
+  }
+  
+  
+  p {
+    color: gray;
+    font-size: 15pt; //funktioniert nicht!
+  
+  }
+  
+  .checkbox{
+    margin-left: 230px;
+    color: black; //
+  }
+/*
+ 
+    h2{
+        color: rgb(109, 108, 108);
+        font-size: 18pt;
+        margin-bottom: 2px;
+    
+    }
+    body{
+      margin-top: 2px;
+      margin-left: 15px;
+    }
+    
+    p {
+      color: rgb(124, 122, 122);
+      font-size: 12pt; // funktioniert nicht für alle p's
+      margin-top: 1px;
+      margin-bottom: 1.5px
+    }
+    
+    .checkbox{
+      margin-left: 230px;
+      color: black; //
+    }
+   
+
+    .bio{
+      float: left;
+      font-weight: 500;
+      font-size: 16pt; 
+    }
+     .liter{
+      margin-left: 30%;
+      font-size: 12pt; 
+      margin-top: 3%;
+      color: rgb(124, 122, 122);
+     }
+
+     .bewerten{
+       color: orangered;
+       font-size: 20pt;
+       font-weight: 500; //funktioniert nicht.
+       margin-top: 10%;
+       margin-bottom: 2px;
+       padding-bottom: 2px;
+       cursor: pointer;
+
+     }
+     .bewerten:hover{
+      background-color:rgb(233, 230, 230);
+      color: orangered !important; 
+      font-weight: 500;
+     }
+     
+     .unten{
+      font-size: 12pt; 
+     // margin-top: 3%;
+      color: rgb(124, 122, 122);
+      text-align: center; //funktioniert nicht.
+
+     }
+     .list{
+      margin-top: 3px;
+      margin-bottom: 3px;
+      display: block;
+     }
+     */

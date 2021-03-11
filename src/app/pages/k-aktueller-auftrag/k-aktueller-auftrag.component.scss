@@ -1,0 +1,49 @@
+
+.list{
+    padding-top: 18px;
+    padding-bottom: 30px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    
+    }
+    
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 0;
+        flex-shrink: 0;
+        margin-top: 15px;
+      }
+     
+        .button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          font-size: 16pt;
+        color: black;
+        margin-bottom: 2px;
+          }
+           .button:hover {
+            background-color:rgb(233, 230, 230);
+            color: orangered !important; 
+          }
+
+    h2{
+        color: grey;
+        font-size: 18pt;
+        margin-bottom: 4px;
+    
+    }
+    
+    
+    p {
+      color: gray;
+      font-size: 15pt; //funktioniert nicht!
+    
+    }
+    
+    .checkbox{
+      margin-left: 230px;
+      color: black; //
+    }

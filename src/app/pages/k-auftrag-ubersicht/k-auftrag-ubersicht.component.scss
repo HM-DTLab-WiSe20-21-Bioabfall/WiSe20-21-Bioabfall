@@ -1,0 +1,56 @@
+@import '~@angular/material/theming';
+@include mat-core();
+@import "src/styles.scss";
+
+.list{
+padding-top: 18px;
+padding-bottom: 30px;
+margin-bottom: 4px;
+margin-top: 4px;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+
+  }
+  h3 {
+    font-size: 15pt;
+    color: rgb(83, 82, 82);
+    margin-bottom: 2px;
+
+    }
+h2{
+    color: rgb(156, 154, 154);
+    font-size: 18pt;
+    margin-bottom: 4px;
+
+}
+
+.button {
+background-color: transparent;
+border: none;
+cursor: pointer;
+font-size: 20pt;
+color: rgb(83, 82, 82);
+margin-bottom: 5px;
+padding-bottom: 3px;
+}
+ .button:hover {
+  background-color:rgb(233, 230, 230);
+  color: orangered !important; //funktioniert nicht!
+}
+
+p{
+  color: gray;
+  font-size: 15pt; //funktioniert nicht!
+
+}
+
+.checkbox{
+  margin-left: 230px;
+  color: black; // funktioniert nicht!
+}

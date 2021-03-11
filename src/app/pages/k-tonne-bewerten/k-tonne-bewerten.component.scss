@@ -1,0 +1,132 @@
+.zentrierung{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#stellplatznr{
+    margin-bottom: 20% !important;
+}
+
+.dropzone{
+    margin-left: 45%;
+    margin-bottom: 70px;
+    margin-top: -30px;
+}
+
+#button-foto{
+    background-color: orange;
+}
+
+.bewertung{
+    margin-bottom: 10%;
+}
+
+.bewertung-buttons{
+    text-align: center;
+    margin-top: 10%;
+    border:0
+}
+
+#buttongreen{
+    height:48px !important;
+    width:48px !important;
+    font-size:48px !important;
+    color: rgb(2, 179, 2);
+    
+}
+  
+#buttonyellow{
+    height:48px !important;
+    width:48px !important;
+    font-size:48px !important;
+    margin: 0 auto !important;
+    color: yellow;
+}
+  
+#buttonred{
+    height:48px !important;
+    width:48px !important;
+    font-size:48px !important;
+    color:red;
+}
+
+.gruen{
+    width: 100px;
+}
+
+.gelb{
+    width: 100px;
+}
+
+.rot{
+    width: 100px;
+}
+//.defekt{}
+
+.anmerkungen{
+    margin-bottom: 5%;
+}
+
+.beanstandung{
+    margin-bottom: 5%;
+}
+
+.checkbox{
+    margin-left: 30px;
+    font-size: 13pt;
+}
+
+.anmerkungen-feld{
+    margin-top: 3%;
+}
+
+.beanstandung-feld {
+    margin: 3%;
+}
+
+.example-full-width{
+    width: 100%;
+    font-size: 20px;
+}
+
+.beschriftung{
+    font-size: 21pt;
+    font-weight: 450;
+}
+
+//.button-speichern{
+//    display: flex;
+//    margin-right: 10px;
+//    vertical-align: middle;
+//}
+
+//Partie
+h2{
+    color: rgb(109, 108, 108);
+    font-size: 21pt;
+    margin-bottom: 2px;
+
+}
+body{
+  margin-top: 2px;
+  margin-left: 15px;
+  margin-bottom: 15%;
+}
+
+p {
+  color: rgb(124, 122, 122);
+  font-size: 15pt; // funktioniert nicht für alle p's
+  margin-top: 1px;
+  margin-bottom: 1.5px
+}
+
+.button-speichern{
+    margin-left: 20%;
+    border-color: orangered;
+}
+
+.icon-save{
+    margin-right: 20px;
+}

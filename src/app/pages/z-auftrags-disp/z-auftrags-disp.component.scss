@@ -1,0 +1,63 @@
+@import '~@angular/material/theming';
+@include mat-core();
+@import "src/styles.scss";
+
+.demo-app-main {
+    flex-grow: 1;
+    padding: 3em;
+  }
+  
+  .fc { 
+    position: sticky;
+    margin: 20px auto;
+    width: 1200px;
+    right: 290px;
+    height: 800px;
+    width: 900px
+  }
+
+  .districts {
+    border-collapse: collapse;
+    width: 30%;
+    right: 300px;
+    top: 85px;
+    bottom: 1000px
+    display table-cell;
+  }
+  
+  .districts td, .districts th {
+    border: 1px solid #ddd;
+    padding: 4px;
+  }
+  
+  .districts tr:nth-child(even){
+    background-color: #f2f2f2;
+  }
+  
+  .districts tr:hover {
+    background-color: #ddd;
+  }
+
+  .districts th {
+    margin-top: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: left;
+    background-color: mat-color($bio10-primary) ;
+    color: black;
+  }
+
+
+  .sideNav {
+    background-color: white;
+    top: 10px;
+    display: flex
+  }
+  
+  .material-icons.md-1{
+    position: relative;
+    border: 2px black;
+    font-size: 48px;
+    left: 10px;
+    top: 5px;
+  }

@@ -1,0 +1,40 @@
+<mat-toolbar class="toolbar-top">
+    <div class="titlelogo">
+        <img src="assets/svg/AWM.svg" height="40" width="40" >
+    </div>
+    <span class="example-spacer"></span>
+    <span class="uberschrift">
+    AWM Zentrale
+    </span>
+    <span class="example-spacer"></span>
+    <nav>  <button routerLink="" class="logoutbutton" mat-icon-button>
+        <mat-icon>exit_to_app</mat-icon>
+        <p class="t-logout">logout</p>
+    </button>
+    </nav>
+</mat-toolbar>
+
+<mat-sidenav-container  class="example-container">
+    <mat-sidenav class="seite" [fixedInViewport]="true" [fixedTopGap]="64"  mode="side" opened > <div >
+        
+        <nav>
+            <button class="button" routerLink="/desktop-layout/z-auftrags-disp" mat-button> <mat-icon>delete</mat-icon> Auftragsdisposition</button>
+        </nav>
+        <nav>
+            <div class="tonnen-button">
+            <button class="button"  routerLink="/desktop-layout/z-tonnen-ubersicht" mat-button > <mat-icon  class="icon-sweep">delete_sweep</mat-icon> Tonnenübersicht </button>
+             </div>
+        </nav>
+        <nav>
+            <div class="gebiet-button">
+            <button class="button"  routerLink="/desktop-layout/z-gebietsubersicht" mat-button > <mat-icon  class="icon-sweep">delete_sweep</mat-icon> Gebiete </button>
+             </div>
+        </nav>
+</div>        
+    </mat-sidenav>
+    <mat-sidenav-content>
+         <span></span>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+

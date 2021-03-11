@@ -1,0 +1,43 @@
+@import '~@angular/material/theming';
+@include mat-core();
+@import "src/styles.scss";
+
+.welcome-text {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-size: 50px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.startseite {
+    align-content: center;
+}
+
+.awmlogo {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.landing-kontrolleur {
+    margin-right: 150px;
+    color: white;
+    width: 200px;
+    height: 60px;
+    background-color: mat-color($bio10-primary);
+}
+
+.landing-kontrolleur:hover {background-color: mat-color($bio10-primary,700)}
+
+.landing-zentrale {
+    color: white;
+    width: 200px;
+    height: 60px;
+    background-color: mat-color($bio10-primary);
+}
+
+.landing-zentrale:hover {background-color: mat-color($bio10-primary,700)}

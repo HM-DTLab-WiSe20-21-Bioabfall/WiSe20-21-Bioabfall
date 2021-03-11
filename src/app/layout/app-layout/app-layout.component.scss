@@ -1,0 +1,75 @@
+@import '~@angular/material/theming';
+@include mat-core();
+@import "src/styles.scss";
+
+
+.titlelogo {
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 10px;
+}
+
+.example-spacer {
+  flex: 2 1 auto;
+}
+/*.logoutbutton{
+  align-items: center;;
+}*/
+.mat-button{
+  color: white;
+}
+p {
+  margin-top: -10px;
+}
+
+.toolbar-top{
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: white;
+    border-bottom: 4px solid mat-color($bio10-primary);
+ 
+  }
+.content-container{height: 100%; /*Scrollbereich 100% des Viewports*/
+  overflow: auto; /*Wenn nichts zu scrollen auch nicht möglich*/
+;
+}
+.toolbarNav{
+  background-color: mat-color($bio10-primary);
+  position: fixed;
+    bottom: 0; 
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.button-auftraege {
+  margin-top: 20px;
+  display: flex;
+}
+
+.button-aktuellerauftrag {
+  margin-top: 20px;
+ display: flex;
+}
+.example-container {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.button-wetter {
+  margin-top: 20px;
+  display: flex;
+}
+
+.t-logout{
+  font-size: 12px;
+  margin-top: -22px;
+}

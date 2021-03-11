@@ -1,0 +1,83 @@
+
+<h1>Tonnenübersicht</h1>
+
+<div class="button_rechnung">
+  <button mat-stroked-button style="position: relative; left: 10px" (click)="button_rechnung_openDialog()">
+    Rechnung ausstellen
+  </button>
+</div>
+
+<mat-icon id="iconlist"> filter_list</mat-icon>
+
+<mat-form-field>
+  <mat-label>Filter</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Bsp. Lehel" #input>
+</mat-form-field>
+
+    <div class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource" matSort>
+        <!-- Checkbox Column -->
+    <ng-container matColumnDef="select">
+      <th mat-header-cell *matHeaderCellDef>
+       <mat-checkbox (change)="$event ? masterToggle() : null"
+                      [checked]="selection.hasValue() && isAllSelected()"
+                      [indeterminate]="selection.hasValue() && !isAllSelected()"
+                      [aria-label]="checkboxLabel()">
+        </mat-checkbox> 
+      </th>
+      <td mat-cell *matCellDef="let row">
+        <mat-checkbox (click)="$event.stopPropagation()"
+                      (change)="$event ? selection.toggle(row) : null"
+                      [checked]="selection.isSelected(row)"
+                      [aria-label]="checkboxLabel(row)">
+        </mat-checkbox>
+      </td>
+    </ng-container>
+
+      <!-- Adresse Splate -->
+      <ng-container matColumnDef="Adresse">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header class="gruppe1">Straße, Hausnummer</th>
+        <td mat-cell *matCellDef="let row" class="gruppe1"> {{row.Adresse}} </td>
+      </ng-container>
+  
+      <!-- Bewertungs-Code Spalte -->
+      <ng-container matColumnDef="Bewertungscode">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header class="gruppe2">Bewertungscode</th>
+        <td mat-cell *matCellDef="let row" [style.color]="row.Bewertungscode"class="gruppe2"> {{row.Bewertungscode}} </td>
+      </ng-container>
+
+      <!-- Kunde Spalte -->
+      <ng-container matColumnDef="Kunde">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header class="gruppe2">Kunde</th>
+        <td mat-cell *matCellDef="let row"> {{row.Kunde}} </td>
+      </ng-container>
+  
+      <!-- Gebiet Spalte -->
+      <ng-container matColumnDef="Gebiet">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header class="gruppe2">Gebiet</th>
+        <td mat-cell *matCellDef="let row" class="gruppe2"> {{row.Gebiet}} </td>
+      </ng-container>
+  
+      <!-- Farbe Spalte -->
+      <ng-container matColumnDef="ZuletztBewertet">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header class="gruppe2">Zuletzt Bewertet</th>
+        <td mat-cell *matCellDef="let row" [style.color]="row.ZuletztBewertet" class="gruppe2"> {{row.ZuletztBewertet| date}} </td>
+      </ng-container>
+      
+        <!-- Defekt Spalte -->
+        <ng-container matColumnDef="Defekt">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header class="gruppe2">Defekt</th>
+          <td mat-cell *matCellDef="let row" class="gruppe2"> {{row.Defekt}} </td>
+        </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+      <!-- Row shown when there is no matching data. -->
+      <tr class="mat-row" *matNoDataRow>
+        <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+      </tr> 
+    </table>
+  
+    <mat-paginator [pageSizeOptions]="[32, 60]" showFirstLastButtons></mat-paginator>
+  </div>

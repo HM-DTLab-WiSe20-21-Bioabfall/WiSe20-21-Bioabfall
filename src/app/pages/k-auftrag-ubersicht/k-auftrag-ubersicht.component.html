@@ -1,0 +1,18 @@
+<!-- <router-outlet></router-outlet> !-->
+
+<div class="center">
+  
+  <mat-action-list>
+    <h2>Aufträge</h2>
+    <mat-list-item class="list" *ngFor='let a of auftraege; index as g'>
+        <button matLine routerLink= "/app-layout/k-aktueller-auftrag" class="button" mat-button id={{g}} (click)='onClick(g)'> <h3>{{a.name}}</h3></button>
+        <p matLine *ngFor='let g of a.gebiet'>Anzahl Stellplätze: {{g.partie.length}}</p>
+        
+<!-- Problem: Wie komme ich bei Array in tiefere Strukturebene
+  <p>{{a.gebiet.partie.tonne.tonnenId}}</p>
+-->
+
+        <mat-checkbox class="checkbox"> </mat-checkbox>
+     </mat-list-item>
+    </mat-action-list>
+</div>

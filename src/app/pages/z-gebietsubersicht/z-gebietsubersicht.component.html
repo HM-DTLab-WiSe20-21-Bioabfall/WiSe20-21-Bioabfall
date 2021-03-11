@@ -1,0 +1,11 @@
+
+
+
+<mat-form-field class="gebiet">
+    <mat-label>Gebiet</mat-label>
+    <mat-select class="selectgebiet">
+      <mat-option>Keine</mat-option>
+      <mat-option *ngFor="let gebiet of GEBIET" [value]="GEBIET">{{gebiet}}</mat-option>
+    </mat-select>
+</mat-form-field>
+<div #mapContainer id="map"></div>
